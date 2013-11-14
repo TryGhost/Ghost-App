@@ -14,7 +14,7 @@ describe('App', function () {
                 'activate',
                 'deactivate'
             ];
-        
+
         _(methods).each(function (method) {
             _.isFunction(app[method]).should.equal(true);
         });
