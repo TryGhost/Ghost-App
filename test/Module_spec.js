@@ -5,7 +5,7 @@ var _ = require('underscore'),
     GhostApp = require('../');
 
 describe('Module', function () {
-    it('exports App', function () {
-        _.isObject(GhostApp.App).should.equal(true);
+    it('exports App directly', function () {
+        _.isObject(GhostApp).should.equal(true);
     });
 });
