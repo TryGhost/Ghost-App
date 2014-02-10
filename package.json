@@ -1,6 +1,6 @@
 {
     "name": "ghost-app",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Build your own app on top of Ghost",
     "author": "Ghost Foundation",
     "homepage"    : "http://ghost.org",
