@@ -15,7 +15,7 @@ describe('App', function () {
         fakeGhost = {
             filters: {
                 register: sandbox.stub(),
-                unregister: sandbox.stub()
+                deregister: sandbox.stub()
             }
         };
     });
