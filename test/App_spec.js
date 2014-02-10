@@ -63,9 +63,9 @@ describe('App', function () {
         app.activate().then(function () {
             app.otherThing.should.equal(true);
 
-            fakeGhost.filters.register.calledWithExactly('ghost_head', null, app.handleGhostHead).should.equal(true);
+            fakeGhost.filters.register.calledWithExactly('ghost_head', app.handleGhostHead).should.equal(true);
             fakeGhost.filters.register.calledWithExactly('ghost_foot', 9, app.handleGhostFoot).should.equal(true);
-            fakeGhost.filters.register.calledWithExactly('prePostRender', null, app.handlePrePostRender).should.equal(true);
+            fakeGhost.filters.register.calledWithExactly('prePostRender', app.handlePrePostRender).should.equal(true);
 
             done();
         }, done);
