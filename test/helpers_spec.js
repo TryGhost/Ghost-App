@@ -1,7 +1,7 @@
 /*global describe, beforeEach, afterEach, it*/
 'use strict';
 
-var _ = require('underscore'),
+var _ = require('lodash'),
     should = require('should'),
     sinon = require('sinon'),
     App = require('../lib/App'),
