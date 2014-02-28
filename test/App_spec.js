@@ -39,6 +39,12 @@ describe('App', function () {
         });
     });
 
+    it('stores ghost api as this.ghost', function () {
+        var app = new App(fakeGhost);
+
+        app.ghost.should.equal(fakeGhost);
+    });
+
     it('registers filters on activate', function (done) {
         var FilterApp = App.extend({
                 filters: {
