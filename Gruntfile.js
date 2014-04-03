@@ -21,6 +21,7 @@ var configureGrunt = function (grunt) {
                     },
                     files: {
                         src: [
+                            'examples/**/*.js',
                             'lib/**/*.js',
                             'test/**/*.js',
                             '*.js'
