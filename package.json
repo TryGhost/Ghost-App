@@ -29,7 +29,6 @@
     "engines": {
         "node": "~0.10.0 || ~0.12.0 || ^4.2.0"
     },
-    "engineStrict": true,
     "dependencies": {
         "lodash": "2.4.1",
         "when": "~2.5.1"
