@@ -7,4 +7,4 @@ For more information please see: [Getting Started with Apps for Ghost Devs](http
 
 ## Copyright & License
 
-Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).
