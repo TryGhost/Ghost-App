@@ -5,14 +5,14 @@ var _ = require('lodash'),
     should = require('should'),
     sinon = require('sinon'),
     App = require('../lib/App'),
-    helpers = require('../lib/helpers.js');
+    helpers = require('../lib/helpers.js'),
+
+    sandbox = sinon.sandbox.create();
 
 describe('Helpers', function () {
-    var sandbox,
-        fakeGhost;
+    var fakeGhost;
 
     beforeEach(function () {
-        sandbox = sinon.sandbox.create();
 
         fakeGhost = {
             filters: {

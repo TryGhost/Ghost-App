@@ -3,14 +3,14 @@
 
 var _ = require('lodash'),
     sinon = require('sinon'),
-    App = require('../lib/App');
+    App = require('../lib/App'),
+
+    sandbox = sinon.sandbox.create();
 
 describe('App', function () {
-    var sandbox,
-        fakeGhost;
+    var fakeGhost;
 
     beforeEach(function () {
-        sandbox = sinon.sandbox.create();
 
         fakeGhost = {
             filters: {
