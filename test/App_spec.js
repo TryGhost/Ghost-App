@@ -35,7 +35,7 @@ describe('App', function () {
             ];
 
         _(methods).each(function (method) {
-            _.isFunction(app[method]).should.equal(true);
+            _.isFunction(app[method]).should.be.true();
         });
     });
 
@@ -67,11 +67,11 @@ describe('App', function () {
             app = new FilterApp(fakeGhost);
 
         app.activate().then(function () {
-            app.otherThing.should.equal(true);
+            app.otherThing.should.be.true();
 
-            fakeGhost.filters.register.calledWithExactly('ghost_head', app.handleGhostHead).should.equal(true);
-            fakeGhost.filters.register.calledWithExactly('ghost_foot', 9, app.handleGhostFoot).should.equal(true);
-            fakeGhost.filters.register.calledWithExactly('prePostRender', app.handlePrePostRender).should.equal(true);
+            fakeGhost.filters.register.calledWithExactly('ghost_head', app.handleGhostHead).should.be.true();
+            fakeGhost.filters.register.calledWithExactly('ghost_foot', 9, app.handleGhostFoot).should.be.true();
+            fakeGhost.filters.register.calledWithExactly('prePostRender', app.handlePrePostRender).should.be.true();
 
             done();
         }, done);

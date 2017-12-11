@@ -6,6 +6,6 @@ var _ = require('lodash'),
 
 describe('Module', function () {
     it('exports App directly', function () {
-        _.isObject(GhostApp).should.equal(true);
+        _.isObject(GhostApp).should.be.true();
     });
 });

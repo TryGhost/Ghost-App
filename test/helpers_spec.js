@@ -50,10 +50,10 @@ describe('Helpers', function () {
             newApp = new NewApp(fakeGhost);
 
         newApp.install(fakeGhost).then(function () {
-            baseInstallSpy.calledWith(fakeGhost).should.equal(true);
-            baseInstallSpy.calledBefore(newInstallStub).should.equal(true);
+            baseInstallSpy.calledWith(fakeGhost).should.be.true();
+            baseInstallSpy.calledBefore(newInstallStub).should.be.true();
 
-            newInstallStub.calledWith(fakeGhost).should.equal(true);
+            newInstallStub.calledWith(fakeGhost).should.be.true();
 
             done();
         }, done);
