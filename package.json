@@ -26,8 +26,8 @@
     "node": "^4.5.0 || ^6.9.0 || ^8.9.0"
   },
   "dependencies": {
-    "lodash": "4.17.4",
-    "when": "~2.5.1"
+    "bluebird": "3.5.1",
+    "lodash": "4.17.4"
   },
   "devDependencies": {
     "istanbul": "0.4.5",
