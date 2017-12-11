@@ -1,8 +1,7 @@
 /*global describe, beforeEach, afterEach, it*/
 'use strict';
 
-var _ = require('lodash'),
-    should = require('should'),
+var should = require('should'),
     sinon = require('sinon'),
     App = require('../lib/App'),
     helpers = require('../lib/helpers.js'),
