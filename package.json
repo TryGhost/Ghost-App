@@ -20,7 +20,9 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=testing mocha -- $(find test -name '*_spec.js')",
-    "coverage": "NODE_ENV=testing istanbul cover --dir test/coverage _mocha -- $(find test -name '*_spec.js')"
+    "coverage": "NODE_ENV=testing istanbul cover --dir test/coverage _mocha -- $(find test -name '*_spec.js')",
+    "preship": "yarn test",
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push --follow-tags; fi"
   },
   "engines": {
     "node": "^6.9.0 || ^8.9.0"
